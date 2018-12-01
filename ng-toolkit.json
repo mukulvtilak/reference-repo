@@ -1,0 +1,7 @@
+{
+  "universal": {
+    "project": "PersiApp2",
+    "skipInstall": false,
+    "directory": "."
+  }
+}

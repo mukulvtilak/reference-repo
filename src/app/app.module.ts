@@ -1,3 +1,4 @@
+import { NgtUniversalModule } from '@ng-toolkit/universal';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from "@angular/forms";
@@ -11,13 +12,15 @@ import { ReusableModule } from "./reusable/reusable.module";
   declarations: [
     AppComponent
   ],
-  imports: [
-    BrowserModule,
+  imports:[
+ CommonModule,
+NgtUniversalModule,
+ 
+    
     AppRoutingModule,
     ReusableModule,
     FormsModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
 })
 export class AppModule { }
